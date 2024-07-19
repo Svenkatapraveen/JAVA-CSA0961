@@ -1,0 +1,26 @@
+abstract class Animal {
+    public abstract void speak();
+}
+class Cat extends Animal {
+    @Override
+    public void speak() {
+        System.out.println("Meow!");
+    }
+}
+class Dog extends Animal {
+    @Override
+    public void speak() {
+        System.out.println("Woof!");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        System.out.print("Cat says: ");
+        cat.speak();
+
+        System.out.print("Dog says: ");
+        dog.speak();
+    }
+}
